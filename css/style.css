@@ -1,0 +1,123 @@
+html,body{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 100%;
+    background-color: #fff;
+    
+
+}
+body a{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition:0.5s all;
+    -moz-transition: 0.5s all;
+
+
+}
+body h1,h2,h3,h4,h5,h6{
+    font-family:'Asap',sans-serif;
+
+
+}
+#home{
+    background: url(../images/bg1.jpg) no-repeat center top;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -ms-background-size:cover;
+    -o-background-size:cover;
+
+
+
+}
+.navigation-right{
+    float: right;
+
+}
+.navigation-right ul li{
+ display: inline-block;
+
+
+}
+
+.navigation-right ul li.active a{
+    color: #0288D1;
+
+}
+.navigation-right ul li a{
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans',sans-serif;
+
+
+}
+span.menu{
+    display: none;
+}
+.link-effect-1 a{
+    padding: 10px 0;
+    margin: 0 12px;
+    color: gray;
+    text-shadow: none;
+    position: relative;
+    font-family: 'Open Sans',sans-serif;
+}
+.link-effect-1 a::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    padding: 10px 0;
+    max-width: 0;
+    border-bottom: 3px solid #0288D1;
+    columns: #0288D1;
+    content:attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+
+
+}
+.link-effect-1 a:hover::before{
+    max-width: 100%;
+
+}
+
+.top-header{
+    padding: 2em 0;
+
+
+}
+.banner-info{
+    background: rgba(23, 20, 20, 0.58);
+    margin-top: 4em;
+
+    
+}
+@media(max-width:900px){
+    .navigation-right ul li a {
+        font-size: 0.9em;
+    }
+.header-right{
+    padding-left: 3em;
+    float: left;
+    width: 50%;
+    padding: 2em;
+    
+}
+.banner-info{
+    background: rgba(47, 44,44, 0.58);
+    margin-top: 3em;
+
+}
+#home{
+    min-height: 560px;
+    
+}
+}
+
